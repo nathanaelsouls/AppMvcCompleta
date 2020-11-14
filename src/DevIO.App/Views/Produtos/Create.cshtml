@@ -8,7 +8,7 @@
 
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-5">
         <form enctype="multipart/form-data" asp-action="Create">
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -42,7 +42,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="Valor" class="control-label"></label>
-                <input asp-for="Valor" class="form-control" />                
+                <input asp-for="Valor" class="form-control" />
+                <span asp-validation-for="Valor" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">

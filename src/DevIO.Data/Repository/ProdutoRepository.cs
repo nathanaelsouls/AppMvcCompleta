@@ -11,9 +11,7 @@ namespace DevIO.Data.Repository
 {
     public class ProdutoRepository : Repository<Produto>, IProdutoRepository
     {
-        public ProdutoRepository(MeuDbContext context) : base(context)
-        {
-        }
+        public ProdutoRepository(MeuDbContext context) : base(context) { }
 
         public async Task<Produto> ObterProdutoFornecedor(Guid id)
         {
